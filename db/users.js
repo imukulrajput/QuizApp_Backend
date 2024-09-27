@@ -10,9 +10,9 @@ const userdata = {
         },
         {
             id: uuid(),
-            username: "SharikaAbrar",
-            password: "sb12345",
-            emailId: "sb@gmail.com",
+            username: "HappyChauhan",
+            password: "hc12345",
+            emailId: "hc@gmail.com",
         },
     ]
 }

@@ -38,7 +38,7 @@ router.route("/login").post(async (req,res)=>{
     }catch(err){
         
           res.status(404).json({message:"Error in Login"});
-          console.log(err);
+          console.log(err); 
     }
   });
 
