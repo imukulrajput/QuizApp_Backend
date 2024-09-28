@@ -9,7 +9,7 @@ const jwt =  require("jsonwebtoken")
 const dotenv = require("dotenv");
 const routeNotFound = require("./middleware/routeNotFound")
 const categoriesRouter = require("./router/categories.router")
-
+const path = require('path');
 const connectDB = require("./config/dbconfig");
 
 const app = express();
@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express.json());
 dotenv.config();
 connectDB(); 
-
+app.use(express.static(path.join(__dirname, 'public')));
 const PORT = 8080;
     
 app.get("/",(req,res)=>{
